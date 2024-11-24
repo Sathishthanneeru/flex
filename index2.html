@@ -4,69 +4,180 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        html, body{
+            box-sizing: border-box;
+            margin: 0;padding: 0;
+        }
+        .header{
+            display: flex;
+            background-color: rgb(14, 13, 13);
+            height: 8vh;
+            width: 100vw;
+            flex-wrap: wrap;
+            justify-content: end;
+            gap: 8px;
+            align-items: center;
+            
+        }
+        main{
+            background-color: rgb(19, 18, 18);
+            height: 84vh;
+            width: 100vw;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            overflow-y: scroll;
+           
+        }
+        ::-webkit-scrollbar{
+            display: none;
+        }
+        .card{
+            width: 270px;
+            height: 145px;
+            background-color: rgb(27, 27, 27);
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .card:hover{
+            border: 1px solid white;
+        }
+        .name{
+            display: flex;
+            position: absolute;
+            left: 5px;
+            bottom: -20px;
+            gap: 3px;
+            
+        }
+        h1{
+            color: white;
+        }
+        h6{
+            color: white;
+        }
+        footer{
+            background-color: rgb(14, 13, 13);
+            height: 8vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            
+        }
+        
+        .red{
+            
+            filter: invert(18%) sepia(92%) saturate(7467%) hue-rotate(0deg) ;
+        }
+        .white{
+            filter: invert(1) ;
+        }
+        .align:hover{
+    padding: 10px;
+    border: 1px solid blue;
+        }
+        
+    </style>
 </head>
-<style>
-    #div1{
-        display: flex;
-        flex-direction: row;
-        padding: 25px;
-        background-color: black;
-        color: white;
-        justify-content: center;
-        row-gap: 25px;
-        flex-wrap: wrap;
-        align-items: center;
-        margin: 250px;
-        
-    }
-    #div1 div{
-        padding: 25px;
-        background-color: black;
-    }
-    img{
-        width: 100px;
-    }
-    p{
-        background-color: darkslategray;
-        border-radius: 25px;
-        
 
-    }
-   
-        
-
-   
-   
-
-  
-
-</style>
 <body>
-    <div id="div1">
-        <div><p>Sathish</p>
-        <img src="./passphoto.jpg" alt="">
-        </div>
-        <div><P>Yogesh</P>
-        <img src="./photo1.jpg" alt="">
-        </div>
-        <div><P>ajay</h1></P>
-        <img src="./sun.jpg" alt="">
-        </div>
-        <div><p>chinna</p>
-        <img src="./water.jpeg" alt=""></div>
-        <div><p>rishi</p>
-        <img src="./way.jpeg" alt="">
-        </div>
-        <div><p>madhu</p>
-        <img src="./photo2.jpg.jpg" alt="">
-        </div>
-        <div><p>pranathi</p>
-        <img src="./water.jpeg" alt="">
-        </div>
-        <div><p>srujan</p>
-        <img src="./pexels-photo-414612.jpeg" alt="">
-        </div>
+    <div class="header">
+        <img class="white align" width="25px" src="./profile-image-zoom-1347-svgrepo-com.svg" alt="">
+
+
     </div>
-    
+    <main>
+<div class="card">
+<h1>sathish t</h1>
+<div class="name"><img class="red" width="13px" src="./audio-muted-svgrepo-com.svg" alt=""><h6>sathish t</h6></div>
+
+</div>
+<div class="card">
+    <img width="100px" src="./ajay.jpg" alt="">
+    <div class="name"><img class="red" width="13px" src="./audio-muted-svgrepo-com.svg" alt=""><h6>ajay</h6></div>
+</div>
+<div class="card">
+    <img width="120px" src="./pexels-photo-414612.jpeg" alt="">
+    <div class="name"><img class="red" width="13px" src="./audio-muted-svgrepo-com.svg" alt=""><h6>chinna</h6></div>
+</div>
+<div class="card">
+    <h1>vishu</h1>
+    <div class="name"><img class="red" width="13px" src="./audio-muted-svgrepo-com.svg" alt=""><h6>vishu</h6></div>
+</div>
+<div class="card">
+    <h1>yash</h1>
+    <div class="name"><img class="red" width="13px" src="./audio-muted-svgrepo-com.svg" alt=""><h6>yash</h6></div>
+</div>
+<div class="card">
+    <img width="120px" src="./sun.jpg" alt="">
+    <div class="name"><img class="red" width="13px" src="./audio-muted-svgrepo-com.svg" alt=""><h6>rishi</h6></div>
+</div><div class="card">
+    <h1>akakasha</h1>
+    <div class="name"><img class="red" width="13px" src="./audio-muted-svgrepo-com.svg" alt=""><h6>akakasha</h6></div>
+</div>
+<div class="card">
+    <img width="110px" src="./passphoto.jpg" alt="">
+    <div class="name"><img class="red" width="13px" src="./audio-muted-svgrepo-com.svg" alt=""><h6>madhu</h6></div>
+</div>
+<div class="card">
+    <img width="100px" src="./way.jpeg" alt="">
+    <div class="name"><img class="red" width="13px" src="./audio-muted-svgrepo-com.svg" alt=""><h6>madhiha</h6></div>
+</div>
+<div class="card">
+    <img width="120px" src="./photo1.jpg" alt="">
+    <div class="name"><img class="red" width="13px" src="./audio-muted-svgrepo-com.svg" alt=""><h6>pranathi</h6></div>
+</div>
+<div class="card">
+    <h1>bhavana</h1>
+    <div class="name"><img class="red" width="13px" src="./audio-muted-svgrepo-com.svg" alt=""><h6>bhavana</h6></div>
+</div>
+<div class="card">
+    <h1>reddy</h1>
+    <div class="name"><img class="red" width="13px" src="./audio-muted-svgrepo-com.svg" alt=""><h6>reddy</h6></div>
+</div>
+<div class="card">
+    <h1>Ganesh</h1>
+    <div class="name"><img class="red" width="13px" src="./audio-muted-svgrepo-com.svg" alt=""><h6>Ganesh</h6></div>
+</div>
+<div class="card">
+    <img width="100px" src="./photo1.jpg" alt="">
+    <div class="name"><img class="red" width="13px" src="./audio-muted-svgrepo-com.svg" alt=""><h6>srujan</h6></div>
+</div>
+<div class="card">
+    <h1>sonu</h1>
+    <div class="name"><img class="red" width="13px" src="./audio-muted-svgrepo-com.svg" alt=""><h6>sonu</h6></div>
+</div>
+<div class="card">
+    <h1>chari</h1>
+    <div class="name"><img class="red" width="13px" src="./audio-muted-svgrepo-com.svg" alt=""><h6>chari</h6></div>
+</div>
+<div class="card">
+    <img width="100px" src="./photo2.jpg.jpg" alt="">
+    <div class="name"><img class="red" width="13px" src="./audio-muted-svgrepo-com.svg" alt=""><h6>Hari</h6></div>
+</div>
+<div class="card">
+    <h1>ajju</h1>
+    <div class="name"><img class="red" width="13px" src="./audio-muted-svgrepo-com.svg" alt=""><h6>ajju</h6></div>
+</div>
+
+    </main>
+    <footer>
+<img class="white align" width="20px" src="./audio-svgrepo-com.svg" alt="">
+<img class="white align" width="25px" src="./video-camera-svgrepo-com.svg" alt="">
+<img class="white align" width="25px" src="./chat-chat-svgrepo-com.svg" alt="">
+<img class="white align" width="25px" src="./share-svgrepo-com.svg" alt="">
+<img class="white align" width="25px" src="./video-camera-svgrepo-com.svg" alt="">
+<img class="white align" width="25px" src="./video-slash-svgrepo-com.svg" alt="">
+<img class="white align" width="25px" src="./pause-circle-svgrepo-com.svg" alt="">
+<img class="white align" width="25px" src="./love-svgrepo-com.svg" alt="">
+<img class="white align" width="25px" src="./stop-button-svgrepo-com.svg" alt="">
+<img class="red align" width="25px" src="./more-horizontal-square-svgrepo-com.svg" alt="">
+    </footer>
 </body>
 </html>
