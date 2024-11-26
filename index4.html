@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .div1{
+        border: 2px solid;
+        width: 100px;
+        height: 100px;
+    }
+    @media screen and (min-width: 0px) and (max-width: 320px) {
+        .div1{
+          background-image: url("./passphoto.jpg");
+          background-size: cover;
+        }
+
+        
+    }
+    @media screen and (min-width: 321px) and (max-width: 375px) {
+        .div1{
+           background-image: url("./photo1.jpg");
+           height: 100px;
+           width: 100px;
+        }
+        
+    }
+    @media screen and (min-width: 376px) and (max-width: 700px){
+        .div1{
+            background-color: black;
+        }
+        
+    }
+   
+</style>
+<body>
+    <div class="div1">
+       
+       </div>
+</body>
+</html>
